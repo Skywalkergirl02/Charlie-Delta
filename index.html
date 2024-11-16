@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charlie Delta - Indumentaria Aeronáutica</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Charlie Delta</h1>
+    <nav>
+      <ul>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#reseñas">Reseñas</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    <div id="cart-counter">
+      <span id="cart-count">0</span> productos en el carrito
+    </div>
+  </header>
+
+  <main>
+    <section id="productos">
+      <h2>Productos</h2>
+      <div class="product-grid">
+        <div class="card">
+          <img src="images/remera1.png" alt="Remera Aeronáutica 1">
+          <h3>Remera Boeing 747 Blueprints</h3>
+          <p>$2500</p>
+          <button class="add-to-cart">Agregar al carrito</button>
+        </div>
+        <div class="card">
+          <img src="images/remera2.png" alt="Remera Aeronáutica 2">
+          <h3>Remera Panam</h3>
+          <p>$2600</p>
+          <button class="add-to-cart">Agregar al carrito</button>
+        </div>
+        <div class="card">
+          <img src="images/buzo1.png" alt="Buzo Aeronáutico 1">
+          <h3>Buzo Remove Before Flight </h3>
+          <p>$3000</p>
+          <button class="add-to-cart">Agregar al carrito</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="reseñas">
+      <h2>Reseñas</h2>
+      <div class="reseñas-grid">
+        <div class="reseña">
+          <p>“Excelente calidad y diseños únicos. ¡Me encanta mi remera de aviación!”</p>
+          <p>- Juan Pérez</p>
+        </div>
+        <div class="reseña">
+          <p>“Buena atención al cliente y la entrega fue rápida.”</p>
+          <p>- Ana García</p>
+        </div>
+        <div class="reseña">
+          <p>“Los buzos son súper cómodos, ideal para los fanáticos de la aviación.”</p>
+          <p>- Carlos Ramírez</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <form action="https://formspree.io/f/xnnqvrok" method="POST"
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+        
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Charlie Delta - Todos los derechos reservados</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
